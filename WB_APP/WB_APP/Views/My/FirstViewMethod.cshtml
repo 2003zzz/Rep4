@@ -1,0 +1,17 @@
+﻿@using WB_APP.Models
+@model List<Vegetables>
+@{
+
+    ViewBag.Title = "Овощи списком";
+}
+<h2>Список овощей</h2>
+@foreach (var vegetable in Model)
+{
+    <div
+        style="text-align:justify;
+            border: 1px solid black;
+            width:20%;
+            font-size:110%;">
+        @vegetable.Name: @vegetable.Price руб
+    </div>
+}
